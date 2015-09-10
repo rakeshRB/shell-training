@@ -1,0 +1,160 @@
+Cleanup of /tmp files for Tools running on AIX servers. [ CC,BF, CQ, RQM, JTS, RTC etc ] --- Cleanup all files remaining on /tmp owned by root
+
+Build forge : va10puvrbf001,va10puvrbf002,vaathmr1148
+RQM         : va10puvrqm001,va10puvrqm002,vaathmr1149
+ClearQuest  : vaathmr1151,vaathmr1136,vaathmr1138,vaathmr1147
+RTC         : va10puvrtc001
+JTS         : va10puvras001
+clearcase   : vaathmr1137,vaathmr1146,va10puvrcs001,vaathmr1139,vaathmr1141,vaathmr1150,vaathmr1140,va10puvrcc001
+
+
+
+
+Meyyappan, Meyyappan 7:22 AM
+root@va10puvrbf001 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 2.75 2.61 6% 492 1% /tmp
+
+root@va10puvrbf001 [/root]
+#
+
+root@va10puvrbf002 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 2.00 1.84 8% 726 1% /tmp
+
+root@va10puvrbf002 [/root]
+
+Meyyappan, Meyyappan 7:26 AM
+root@vaathmr1148 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 2.00 1.82 10% 584 1% /tmp
+
+root@vaathmr1148 [/root]
+
+Meyyappan, Meyyappan 7:33 AM
+root@va10puvrqm001 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 5.00 3.98 21% 2538 1% /tmp
+
+root@va10puvrqm001 [/root]
+#
+
+Meyyappan, Meyyappan 7:37 AM
+root@va10puvrqm002 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 7.00 5.18 26% 4015 1% /tmp
+
+root@va10puvrqm002 [/root]
+
+root@vaathmr1149 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 5.00 3.86 23% 3108 1% /tmp
+
+root@vaathmr1149 [/root]
+
+Meyyappan, Meyyappan 7:41 AM
+root@vaathmr1151 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 5.00 4.83 4% 920 1% /tmp
+
+root@vaathmr1151 [/root]
+#
+
+root@vaathmr1136 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 2.00 1.74 13% 774 1% /tmp
+
+root@vaathmr1136 [/root]
+
+root@vaathmr1138 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 3.00 2.71 10% 752 1% /tmp
+
+root@vaathmr1138 [/root]
+
+root@vaathmr1147 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 4.00 3.79 6% 859 1% /tmp
+
+root@vaathmr1147 [/root]
+
+root@va10puvrtc001 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 5.00 4.76 5% 6112 1% /tmp
+
+root@va10puvrtc001 [/root]
+
+root@va10puvras001 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 5.25 5.09 3% 733 1% /tmp
+
+root@va10puvras001 [/root]
+
+root@vaathmr1137 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 3.00 2.64 13% 624 1% /tmp
+
+root@vaathmr1137 [/root]
+
+root@vaathmr1146 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 4.00 3.06 24% 1375 1% /tmp
+
+root@vaathmr1146 [/root]
+
+root@va10puvrcs001 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 3.00 2.70 11% 1285 1% /tmp
+
+root@va10puvrcs001 [/root]
+
+root@vaathmr1139 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 4.88 4.80 2% 400 1% /tmp
+
+root@vaathmr1139 [/root]
+
+root@vaathmr1141 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 3.12 2.96 6% 512 1% /tmp
+
+root@vaathmr1141 [/root]
+
+root@vaathmr1150 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 3.25 3.17 3% 506 1% /tmp
+
+root@vaathmr1150 [/root]
+
+root@vaathmr1140 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 2.88 2.80 3% 390 1% /tmp
+
+root@vaathmr1140 [/root]
+
+root@va10puvrcc001 [/root]
+# df -g /tmp
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+/dev/hd3 3.00 2.98 1% 384 1% /tmp
+
+root@va10puvrcc001 [/root]
+
