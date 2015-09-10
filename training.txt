@@ -1,4 +1,8 @@
 
 this is my fitst training
 changing file for testing blame
+<<<<<<< HEAD
 applying tag
+=======
+adding newbranch
+>>>>>>> Training
