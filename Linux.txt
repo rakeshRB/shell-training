@@ -1,0 +1,362 @@
+:%s/keyword/replaced keyword/gc
+
+$ sort -r shell.sh
+z
+y
+x
+w
+v
+u
+t
+s
+r
+q
+p
+o
+n
+m
+l
+k
+j
+i
+h
+g
+f
+e
+d
+c
+b
+a
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat test.sh
+Sno     Name    Dep
+1       test1   DEV
+2       test2   Test
+3       test3   SIT
+4       test4   UAT
+5       test5   PROD
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cut -f1 test.sh
+Sno
+1
+2
+3
+4
+5
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cut -f2 test.sh
+Name
+test1
+test2
+test3
+test4
+test5
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cut -f1-3 test.sh
+Sno     Name    Dep
+1       test1   DEV
+2       test2   Test
+3       test3   SIT
+4       test4   UAT
+5       test5   PROD
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cut -f1,3
+
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cut -f1,3 test.sh
+Sno     Dep
+1       DEV
+2       Test
+3       SIT
+4       UAT
+5       PROD
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ vi test.sh
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat test.sh
+Sno Name Dep
+1 test1 DEV
+2 test2 Test
+3 test3 SIT
+4 test4 UAT
+5 test5 PROD
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cut -d" " -f1 test.sh
+Sno
+1
+2
+3
+4
+5
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ ls
+a.txt  branch.txt  shell.sh  test.sh  tmp.txt  training.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cd ..
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT
+$ find . -name tmp.txt
+./GitTraining/tmp.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT
+$ cd ..
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop
+$ find . -name tmp.txt
+./GIT/GitTraining/tmp.txt
+./tmp.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop
+$ find . -name *.txt
+find: paths must precede expression: Chat with fred.txt
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop
+$ find . -name "*.txt"
+./cc.log.txt
+./Chat with fred.txt
+./CounterWebApp/CounterWebApp/new.txt
+./CQlimitqurey.txt
+./CTEconfigfile.txt
+./diffperl.txt
+./Eclipse/eclipse/configuration/org.eclipse.osgi/836/0/.cp/about_files/SLF4J-LICENSE.txt
+./Eclipse/eclipse/configuration/org.eclipse.osgi/836/0/.cp/readme-bundles.txt
+./Eclipse/eclipse/features/org.eclipse.ecf.filetransfer.feature_3.9.2.v20141221-2352/asl-v20.txt
+./Eclipse/eclipse/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.2.v20141221-2352/asl-v20.txt
+./Eclipse/eclipse/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20141221-2352/asl-v20.txt
+./Eclipse/eclipse/plugins/com.ibm.rational.clearcase.ide_8.0.1.v20150508_1350/icons/readme.txt
+./Eclipse/eclipse/plugins/com.ibm.rational.team.client.ui.component.nl1_8.0.1.v20150415_1848/com/ibm/rational/team/client/ui/component/customization/readme_de.txt
+./Eclipse/eclipse/plugins/com.ibm.rational.team.client.ui.component.nl1_8.0.1.v20150415_1848/com/ibm/rational/team/client/ui/component/customization/readme_es.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat tmp.txt | grep "df -g"
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+# df -g /tmp
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat tmp.txt | grep -i gb
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+Filesystem GB blocks Free %Used Iused %Iused Mounted on
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat tmp.txt | grep -i -n  gb
+16:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+24:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+32:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+40:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+49:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+56:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+64:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+72:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+79:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+86:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+93:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+100:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+107:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+114:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+121:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+128:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+135:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+142:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+149:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+156:Filesystem GB blocks Free %Used Iused %Iused Mounted on
+
+(cat tmp.txt | grep -i -n  -v root) -v means reverse 
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ grep -i root *
+tmp.txt:Cleanup of /tmp files for Tools running on AIX servers. [ CC,BF, CQ, RQM, JTS, RTC etc ] --- Cleanup all files remaining on /tmp owned by root
+tmp.txt:root@va10puvrbf001 [/root]
+tmp.txt:root@va10puvrbf001 [/root]
+tmp.txt:root@va10puvrbf002 [/root]
+tmp.txt:root@va10puvrbf002 [/root]
+tmp.txt:root@vaathmr1148 [/root]
+tmp.txt:root@vaathmr1148 [/root]
+tmp.txt:root@va10puvrqm001 [/root]
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop
+$ grep -i -R tmp *
+grep: ACC.pst: Device or resource busy
+Binary file BuildForge/BF80_ic.pdf matches
+Binary file BuildForge/Build Forge Training - Automated Build.pptx matches
+Binary file BuildForge/Build Forge Training - Automated Deploy.pptx matches
+Binary file BuildForge/Build Forge Training.pptx matches
+Binary file BuildForge/BuildForge-InstallGuide-M2.pdf matches
+Binary file BuildForge/BuildForgeHelp_en_US.pdf matches
+Binary file BuildForge/MD_ARG_Rational Build Forge.doc matches
+Binary file BuildForge/MD_ARG_Rational Build Forge.docx matches
+Binary file BuildForge/MD_ARG_Rational BuildForge.docx matches
+
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ vi sed.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ sed 's/rakesh/puru/g'sed.txt
+sed: -e expression #1, char 16: unknown option to `s'
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ sed 's/rakesh/puru/g' sed.txt
+Hi Rakesh
+how r u doing
+all the best for shell scripting
+puru do well in the interview.
+Rakesh get the best offer
+Hi puru april 1st is the last working day
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat sed.txt
+Hi Rakesh
+how r u doing
+all the best for shell scripting
+rakesh do well in the interview.
+Rakesh get the best offer
+Hi rakesh april 1st is the last working day
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ sed -i 's/rakesh/puru/g' sed.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat sed.txt
+Hi Rakesh
+how r u doing
+all the best for shell scripting
+puru do well in the interview.
+Rakesh get the best offer
+Hi puru april 1st is the last working day
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ sed -i 's/rakesh/puru/g' *
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ ls
+a.txt  abc.txt  branch.txt  sed.txt  shell.sh  test.sh  tmp.txt  training.txt  xyz.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat abc.txt
+puru
+puru
+puru
+puru
+puru
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat xyz.txt
+puru
+puru
+puru
+puru
+puru
+
+
+awk:  aho weignburg kernighan 
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ awk '{print $1}' test.sh
+Sno
+1
+2
+3
+4
+5
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ awk '{print $1--$2--$3}' test.sh
+00Dep
+10DEV
+20Test
+30SIT
+40UAT
+50PROD
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ awk '{print "$1"--"$2"--"$3"}' test.sh
+awk: cmd. line:1: {print "$1"--"$2"--"$3"}
+awk: cmd. line:1:              ^ syntax error
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ awk '{print $1"--"$2"--$3"}' test.sh
+Sno--Name--$3
+1--test1--$3
+2--test2--$3
+3--test3--$3
+4--test4--$3
+5--test5--$3
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ awk '{print $1"--"$2"--"$3}' test.sh
+Sno--Name--Dep
+1--test1--DEV
+2--test2--Test
+3--test3--SIT
+4--test4--UAT
+5--test5--PROD
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ awk '{print NF}' test.sh
+3
+3
+3
+3
+3
+3
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ awk '{print NR}' test.sh
+1
+2
+3
+4
+5
+6
+
+
+
+

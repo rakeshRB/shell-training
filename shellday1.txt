@@ -1,0 +1,72 @@
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat first.sh
+
+
+echo "This is my first script"
+
+x=100
+y=200
+
+#total=`expr $x + $y`
+total=$x+$y
+echo x value is: $x
+echo y value is: $y
+echo totla value: $total
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ ./first.sh
+This is my first script
+x value is: 100
+y value is: 200
+totla value: 100+200
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ vi first.sh
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat first.sh
+
+
+echo "This is my first script"
+
+x=100
+y=200
+
+total=`expr $x + $y`
+
+echo x value is: $x
+echo y value is: $y
+echo totla value: $total
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ vi first.sh
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ ./first.sh
+This is my first script
+enter x value:
+10
+enter y value:
+20
+x value is: 10
+y value is: 20
+totla value: 30
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat first.sh
+
+
+echo "This is my first script"
+
+echo enter x value:
+read x
+echo enter y value:
+read y
+
+total=`expr $x + $y`
+
+echo x value is: $x
+echo y value is: $y
+echo totla value: $total
+
+

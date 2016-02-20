@@ -1,0 +1,200 @@
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ echo $?
+0
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ rm kill
+rm: cannot remove ‘kill’: No such file or directory
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ echo $?
+1
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ ls *
+a.txt    branch.txt  sed.txt   test.sh  training.txt
+abc.txt  first.sh    shell.sh  tmp.txt  xyz.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls s*
+sed.txt  shell.sh
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls t*
+test.sh  tmp.txt  training.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls *.sh
+first.sh  shell.sh  test.sh
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls s*.c
+ls: cannot access s*.c: No such file or directory
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls s*.txt
+sed.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls
+a.txt    branch.txt  sed.txt   test.sh  training.txt
+abc.txt  first.sh    shell.sh  tmp.txt  xyz.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls ?
+ls: cannot access ?: No such file or directory
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls fi?
+ls: cannot access fi?: No such file or directory
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls [abc]*
+a.txt  abc.txt  branch.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls [!a-c]
+ls: cannot access [!a-c]: No such file or directory
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls [^a-c]
+ls: cannot access [^a-c]: No such file or directory
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls
+a.txt    branch.txt  sed.txt   test.sh  training.txt
+abc.txt  first.sh    shell.sh  tmp.txt  xyz.txt
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ ls [^a-b]
+ls: cannot access [^a-b]: No such file or directory
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ date
+Fri, Feb 19, 2016  8:23:21 PM
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ who
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ whoami
+r.b.mallikarjunappa
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ date whoami
+date: invalid date ‘whoami’
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ date;whoami
+Fri, Feb 19, 2016  8:23:43 PM
+r.b.mallikarjunappa
+
+0
+NOTE:
+$# holds number of arguments specified on command line. And $* or $@ refer to all arguments passed to script.
+
+From <http://www.freeos.com/guides/lsst/ch02sec13.html> 
+
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ vi demo
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ ./demo first
+Total number of command line argument are 1
+./demo is script name
+first is first argument
+ is second argument
+All of them are :- first or first
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ ./demo first second third
+Total number of command line argument are 3
+./demo is script name
+first is first argument
+second is second argument
+All of them are :- first second third or first second third
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat demo
+#!/bin/sh
+ #
+  # Script that demos, command line args
+   #
+    echo "Total number of command line argument are $#"
+     echo "$0 is script name"
+      echo "$1 is first argument"
+       echo "$2 is second argument"
+        echo "All of them are :- $* or $@"
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ ./demo 1 2 3 4 5 6
+Total number of command line argument are 6
+./demo is script name
+1 is first argument
+2 is second argument
+All of them are :- 1 2 3 4 5 6 or 1 2 3 4 5 6
+
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ cat > name
+rakesh
+vinay
+puru
+jagga
+hiten
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ sort < name
+hiten
+jagga
+puru
+rakesh
+vinay
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ sort < name > sorted_name
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ cat name
+rakesh
+vinay
+puru
+jagga
+hiten
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ cat sorted_name
+hiten
+jagga
+puru
+rakesh
+vinay
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ tr "[a-z]" "[A-Z]" < name > sorted_name
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTrai                                                                                                                                                 ning (Training)
+$ cat sorted_name
+RAKESH
+VINAY
+PURU
+JAGGA
+HITEN
+
+tr command is used to translate all lower case characters to upper-case letters. It take input from sname file, and tr's output is redirected to cap_names file.
+
+From <http://www.freeos.com/guides/lsst/ch02sec15.html> 
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ sort > new_sorted_name < name
+
+r.b.mallikarjunappa@BDC7-L-3NPX8R1 MINGW64 ~/Desktop/desktop/Desktop/GIT/GitTraining (Training)
+$ cat new_sorted_name
+hiten
+jagga
+puru
+rakesh
+vinay
+
+
